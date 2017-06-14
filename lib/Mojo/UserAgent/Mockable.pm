@@ -526,6 +526,10 @@ sub _init_record {
                 finish => sub {
                     my $tx = shift;
                     push @{ $self->{'_transactions'} }, $tx;
+
+                    # 15: During global destruction the $tx object may no longer exist
+                    # so save now
+                    $self->save($self->file);
                 },
             );
             1;
@@ -542,12 +546,4 @@ sub _load_transactions {
     return \@transactions;
 }
 
-# In record mode, write out the recorded file
-sub DESTROY {
-    my $self = shift;
-
-    if ( $self->_mode eq 'record' ) {
-        $self->save( $self->file );
-    }
-}
 1;

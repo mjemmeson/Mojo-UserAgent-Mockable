@@ -1,5 +1,6 @@
 {{$NEXT}}
 
+- #15: Fixed issue where save wouldn't work if called during global destruction
 - Fixed dependencies screwed up in v1.52
 
 1.52      2017-02-27 10:21:36-06:00 America/Chicago
