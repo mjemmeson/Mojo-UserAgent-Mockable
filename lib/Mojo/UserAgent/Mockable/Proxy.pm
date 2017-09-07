@@ -1,4 +1,4 @@
-use 5.016;
+use 5.014;
 
 # ABSTRACT: Proxy class for Mojo::UserAgent::Mockable that will not set any proxy.
 
