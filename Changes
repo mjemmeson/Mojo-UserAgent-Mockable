@@ -1,5 +1,6 @@
 {{$NEXT}}
 
+- Removed dependency on Mojolicious::Quick in favor of Mojolicious::Lite
 - Fixed dependencies screwed up in v1.52
 - Fixed issue #18 where tests failed due updates to the V&A site.
 
