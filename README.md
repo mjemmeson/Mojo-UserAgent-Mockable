@@ -4,7 +4,7 @@ Mojo::UserAgent::Mockable - A Mojo User-Agent that can record and play back requ
 
 # VERSION
 
-version 1.54
+version 1.55
 
 # SYNOPSIS
 
@@ -316,7 +316,7 @@ Kit Peters <popefelix@gmail.com>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2017 by Kit Peters.
+This software is copyright (c) 2018 by Kit Peters.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
