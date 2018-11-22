@@ -4,7 +4,7 @@ Mojo::UserAgent::Mockable - A Mojo User-Agent that can record and play back requ
 
 # VERSION
 
-version 1.55
+version 1.56
 
 # SYNOPSIS
 
@@ -291,6 +291,8 @@ The class being mocked (but not derided, because the whole Mojo thing is really 
 Where the magic happens
 
 # CONTRIBUTORS
+
+Mike Eve [https://github.com/ungrim97](https://github.com/ungrim97)
 
 Phineas J. Whoopee [https://github.com/antoniel123](https://github.com/antoniel123)
 
