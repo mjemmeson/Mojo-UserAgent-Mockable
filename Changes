@@ -2,7 +2,7 @@
 
 - #15: Fixed issue where save wouldn't work if called during global destruction
 
-1.55      2018-11-21 22:07:46-06:00 America/Chicago
+1.55      2018-11-21 22:05:33-06:00 America/Chicago
 
 - Mojo::UserAgent::Mockable::Request::Compare compares GET parameters without regard to parameter order.
 - Removed dependency on Mojolicious::Quick in favor of Mojolicious::Lite
