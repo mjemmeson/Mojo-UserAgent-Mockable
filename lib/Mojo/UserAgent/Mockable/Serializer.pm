@@ -195,7 +195,8 @@ sub _serialize_tx {
         class    => ref $transaction,
     };
     for my $event ( keys %{ $transaction->{'events'} } ) {
-        next if $event eq 'pre_freeze' or $event eq 'post_freeze' or $event eq 'resume';
+        next if $event eq 'pre_freeze' or $event eq 'post_freeze' or $event eq 'resume' 
+            or $event eq 'finish'; # 'finish' comes from Mojo::IOLoop; we probably don't need to serialize it
         carp(qq{Subscriber for event "$event" not serialized}) if warnings::enabled;
         push @{ $slush->{'events'} }, $event;
     }
