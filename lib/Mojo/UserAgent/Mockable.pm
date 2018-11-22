@@ -294,6 +294,8 @@ Where the magic happens
 
 =head1 CONTRIBUTORS
 
+Phineas J. Whoopee L<https://github.com/antoniel123>
+
 Marc Murray L<https://github.com/marcmurray>
 
 Steve Wagner C<< <truroot at gmail.com> >>
