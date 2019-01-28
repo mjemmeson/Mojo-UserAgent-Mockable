@@ -284,6 +284,14 @@ The following transaction level events will not be emitted during playback:
 
 In record mode, save the transaction cache to the file specified by L</file> for later playback.
 
+=head1 TROUBLESHOOTING
+
+=head2 Failing to save in record mode
+
+With a relative file name (e.g. based on C<$0>) for the saved playback data, a change of directory before
+C<save> is called will result in the following error: C<Mojo::Reactor::Poll: I/O watcher failed: Error sysopen...>.
+The solution is to use an absolute filename when creating the C<Mojo::UserAgent::Mockable> object.
+
 =head1 SEE ALSO
 
 =for :list
